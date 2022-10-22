@@ -5,15 +5,13 @@ import App from "./App.vue";
 import router from "./router";
 
 import "bootstrap"
-import "./assets/main.css";
-import vue3dLoader from "vue-3d-loader";
-
+//import "./assets/main.css";
+import { TroisJSVuePlugin } from 'troisjs';
 
 const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
-app.use(vue3dLoader);
-
+app.use(TroisJSVuePlugin);
 
 app.mount("#app");
