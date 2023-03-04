@@ -1,4 +1,8 @@
 <template>
+  <div class="search-wrapper">
+    <input type="text" v-model="search" placeholder="Search title.." />
+    <label>Search title:</label>
+  </div>
 
   <div class="planetsArea">
     <h4>Planetas</h4>
@@ -21,7 +25,15 @@ export default {
 
   data() {
     return {
-      dataPlanets: dataPlanets
+      data: dataPlanets,
+      search: ""
+    }
+  },
+  computed: {
+    dataPlanets() {
+      return this.data.filter(p => {
+        return p.planetName.toLowerCase().includes(this.search.toLowerCase())
+      })
     }
   }
 };
@@ -43,7 +55,7 @@ h4 {
 }
 
 .planet {
-  margin-left: 15px;                          
+  margin-left: 15px;
   cursor: pointer;
 }
 

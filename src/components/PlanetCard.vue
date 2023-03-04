@@ -6,8 +6,8 @@
             <Scene background="#000000">
                 <AmbientLight :intensity="0.5" />
                 <PointLight :position="{ x: 100, z: 0 }" />
-                <PointLight color="#ffffff" :intensity="0.75" :position="{ y: -50, z: 0 }" />
-                <Sphere ref="mesh" :radius="2.5" :width-segments="200" :height-segments="200">
+                <PointLight color="#ffffff" :intensity="0.75" :position="{ y: 0, z: 0 }" />
+                <Sphere ref="mesh" :radius="2.5" :width-segments="100" :height-segments="100">
                     <StandardMaterial :props="{ displacementScale: 0.1 }">
                         <Texture :src=planetPathBaseColor />
                         <Texture :src=planetPathDisplacement name="displacementMap" />
@@ -18,8 +18,8 @@
             </Scene>
         </Renderer>
         <div class="container">
-            <h5><b>{{planetName}}</b></h5>
-            <p>{{planetNameEnglish}}</p>
+            <h5><b>{{ planetName }}</b></h5>
+            <p>{{ planetNameEnglish }}</p>
         </div>
     </div>
 
