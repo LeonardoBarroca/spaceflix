@@ -17,7 +17,8 @@
         "planetPathBaseColor": "earthmap4k.jpg",
         "planetPathRoughness": "earthcloudmaptrans.jpg",
         "planetPathDisplacement": "8081_earthbump4k.jpg"
-    },{
+    },
+    {
         "planetName": "Lua",
         "planetNameEnglish": "Moon",
         "planetPathBaseColor": "moonmap2k.jpg",
