@@ -20,6 +20,7 @@
 import PlanetCard from '../components/PlanetCard.vue'
 import dataPlanets from '../assets/data.json'
 
+
 export default {
   components: { PlanetCard },
 
