@@ -27,7 +27,7 @@
 
 <script>
 import { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture } from 'troisjs';
-
+//
 
 export default {
     name: "PlanetCard",
