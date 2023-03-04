@@ -2,58 +2,58 @@
     {
         "planetName": "Mercúrio",
         "planetNameEnglish": "Mercury",
-        "planetPathBaseColor": "../src/assets/images/mercurymap.jpg",
-        "planetPathDisplacement": "../src/assets/images/mercurybump.jpg"
+        "planetPathBaseColor": "mercurymap.jpg",
+        "planetPathDisplacement": "mercurybump.jpg"
     },
     {
         "planetName": "Vênus",
         "planetNameEnglish": "Venus",
-        "planetPathBaseColor": "../src/assets/images/venusmap.jpg",
-        "planetPathDisplacement": "../src/assets/images/venusbump.jpg"
+        "planetPathBaseColor": "venusmap.jpg",
+        "planetPathDisplacement": "venusbump.jpg"
     },
     {
         "planetName": "Terra",
         "planetNameEnglish": "Earth",
-        "planetPathBaseColor": "../src/assets/images/earthmap4k.jpg",
-        "planetPathRoughness": "../src/assets/images/earthcloudmaptrans.jpg",
+        "planetPathBaseColor": "earthmap4k.jpg",
+        "planetPathRoughness": "earthcloudmaptrans.jpg",
         "planetPathDisplacement": "8081_earthbump4k.jpg"
     },{
         "planetName": "Lua",
         "planetNameEnglish": "Moon",
-        "planetPathBaseColor": "../src/assets/images/moonmap2k.jpg",
-        "planetPathDisplacement": "../src/assets/images/moonbump2k.jpg"
+        "planetPathBaseColor": "moonmap2k.jpg",
+        "planetPathDisplacement": "moonbump2k.jpg"
     },
     {
         "planetName": "Marte",
         "planetNameEnglish": "Mars",
-        "planetPathBaseColor": "../src/assets/images/marsmap1k.jpg",
-        "planetPathNormal": "../src/assets/images/mars_1k_normal.jpg",
-        "planetPathDisplacement": "../src/assets/images/marsbump1k.jpg"
+        "planetPathBaseColor": "marsmap1k.jpg",
+        "planetPathNormal": "mars_1k_normal.jpg",
+        "planetPathDisplacement": "marsbump1k.jpg"
     },
     {
         "planetName": "Júpiter",
         "planetNameEnglish": "Jupiter",
-        "planetPathBaseColor": "../src/assets/images/jupiter2_2k.jpg"
+        "planetPathBaseColor": "jupiter2_2k.jpg"
     },
     {
         "planetName": "Saturno",
         "planetNameEnglish": "Saturn",
-        "planetPathBaseColor": "../src/assets/images/saturnmap.jpg"
+        "planetPathBaseColor": "saturnmap.jpg"
     },
     {
         "planetName": "Urano",
         "planetNameEnglish": "Uranus",
-        "planetPathBaseColor": "../src/assets/images/uranusmap.jpg"
+        "planetPathBaseColor": "uranusmap.jpg"
     },
     {
         "planetName": "Netuno",
         "planetNameEnglish": "Neptune",
-        "planetPathBaseColor": "../src/assets/images/neptunemap.jpg"
+        "planetPathBaseColor": "neptunemap.jpg"
     },
     {
         "planetName": "Plutão",
         "planetNameEnglish": "Pluto",
-        "planetPathBaseColor": "../src/assets/images/plutomap2k.jpg",
-        "planetPathDisplacement": "../src/assets/images/plutobump2k.jpg"
+        "planetPathBaseColor": "plutomap2k.jpg",
+        "planetPathDisplacement": "plutobump2k.jpg"
     }
 ]
