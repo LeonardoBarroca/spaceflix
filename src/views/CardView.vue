@@ -7,10 +7,10 @@
   <div class="planetsArea">
     <h4>Planetas</h4>
     <div class="planets">
-      <div class="planet" v-for="planet in dataPlanets">
-        <PlanetCard :planet-name=planet.planetName :planet-name-english=planet.planetNameEnglish
-          :planet-path-base-color=planet.planetPathBaseColor
-          v-bind:planet-path-displacement=planet.planetPathDisplacement />
+      <div class="planet" v-for="planet in dataPlanets" :key="planet.planetNameEnglish">
+          <PlanetCard :planet-name="planet.planetName" :planet-name-english="planet.planetNameEnglish"
+            :planet-path-base-color="planet.planetPathBaseColor"
+            :planet-path-displacement="planet.planetPathDisplacement" />
       </div>
     </div>
   </div>
@@ -20,8 +20,7 @@
 import PlanetCard from '../components/PlanetCard.vue'
 import dataPlanets from '../assets/data.json'
 
-
-export default { //save
+export default {
   components: { PlanetCard },
 
   data() {
@@ -60,9 +59,4 @@ h4 {
   cursor: pointer;
 }
 
-.centralize {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 </style>

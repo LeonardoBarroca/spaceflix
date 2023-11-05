@@ -27,7 +27,6 @@
 
 <script>
 import { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture } from 'troisjs';
-//
 
 export default {
     name: "PlanetCard",
@@ -40,11 +39,6 @@ export default {
         planetPathRoughness: String,
         planetPathNormal: String
     },
-    data() {
-        return {
-
-        }
-    }
 }
 </script>
 

@@ -1,7 +1,6 @@
 
 <template>
   <main>
-
     <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -10,15 +9,15 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="/bg1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="/bg5.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="/bg4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/bg6.jpg" class="d-block w-100" alt="...">
 
 
           <div class="carousel-caption d-none d-md-block">
@@ -27,7 +26,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/bg3.jpg" class="d-block w-100" alt="...">
+          <img src="/bg7.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -44,24 +43,35 @@
       </button>
     </div>
 
-    <div class="container text-center">
-      <div class="row row-cols-2">
-        <div class="col">
-          <h5>A Spaceflix foi feita para você encontrar diversos conteúdos sobre astronomia de forma simples e
-            intuitiva.</h5>
-        </div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
+
+    <div class="home-img-text d-flex" style="height: 300px;">
+      <div class="d-flex text-center align-items-center p-2">
+        <h5>A Spaceflix foi feita para você encontrar diversos
+          conteúdos sobre astronomia de forma simples e
+          intuitiva</h5>
       </div>
+
+      <img class="home-img" src="/home2.jpg" alt="galáxia">
     </div>
 
+    <div class="home-img-text d-flex" style="height: 300px;">
+      <img class=" home-img" src="/home1.jpg" alt="céu estrelado">
 
+      <div class="d-flex text-center align-items-center p-2">
+        <h5>Contamos com seu feedback para evoluirmos e enriquecermos nossa plataforma</h5>
+      </div>
+    </div>
   </main>
-
-
 </template>
 
-<script setup>
+<style scoped>
+.home-img {
+  scale: 0.7;
+  border-radius: 50%;
+}
 
-</script>
+@media (max-width: 768px) {
+  .home-img-text {
+    flex-direction: column;
+  }
+}</style>

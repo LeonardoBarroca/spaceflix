@@ -4,22 +4,24 @@
   </header>
 
   <RouterView />
+  <Footer />
 </template>
 
 <script>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
 import Navbar from '@/components/Navbar.vue';
-
+import Footer from '@/components/Footer.vue';
 export default {
-  components: { Navbar },
+  components: { Navbar, Footer },
   data() {
     return {
       count: 0
     }
   }
 }
+
 </script>
 
-<style scoped>
-
+<style>
+@import "bootstrap/dist/css/bootstrap.min.css";
 </style>

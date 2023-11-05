@@ -1,51 +1,74 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Spaceflix</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <RouterLink to="/">Home</RouterLink>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <RouterLink to="/about">about</RouterLink>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">
-                                    About
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <div class="navbar">
+        <ul class="navbar-menu">
+            <li>
+                <a>
+                    <IconLogo />
+                </a>
+            </li>
+            <li><a>
+                    <RouterLink to="/">Home</RouterLink>
+                </a>
+            </li>
+            <li><a>
+                    <RouterLink to="/card">Cards</RouterLink>
+                </a>
+            </li>
+        </ul>
+    </div>
 </template>
 
-<style >
-@import "bootstrap/dist/css/bootstrap.min.css";
+<script>
+import IconLogo from "@/components/icons/IconLogo.vue"
+
+export default {
+    name: "NavBar",
+    components: { IconLogo }
+}
+</script>
+
+<style scoped>
+.navbar {
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-right: 16px;
+
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-menu li {
+        margin-right: 0;
+    }
+
+    .navbar-menu>*:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
 </style>
