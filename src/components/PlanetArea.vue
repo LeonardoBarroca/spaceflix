@@ -1,24 +1,22 @@
 <template>
-    <Renderer class="planet" ref="renderer" height="600px"
-        :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 0.05 }">
-        <Camera :position="{ z: 6.5 }" />
-        <Scene background="#000000">
-            <AmbientLight :intensity="0.5" />
-            <PointLight :position="{ x: 100, z: 0 }" />
-            <PointLight color="#ffffff" :intensity="0.75" :position="{ y: 0, z: 0 }" />
-            <Sphere ref="mesh" :radius="2.5" :width-segments="100" :height-segments="100">
-                <StandardMaterial :props="{ displacementScale: 0.1 }">
-                    <Texture :src=planetPathBaseColor />
-                    <Texture :src=planetPathDisplacement name="displacementMap" />
-                    <Texture :src=planetPathNormal name="normalMap" />
-                    <Texture :src=planetPathRoughness name="roughnessMap" />
-                </StandardMaterial>
-            </Sphere>
-        </Scene>
-    </Renderer>
-    <div class="container">
-        <h5><b>{{ planetName }}</b></h5>
-        <p>{{ planetNameEnglish }}</p>
+    <div class="teste">
+        <Renderer ref="renderer" width="500px" height="500px"
+            :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 1 }">
+            <Camera :position="{ z: 6.5 }" />
+            <Scene background="#000000">
+                <AmbientLight :intensity="0.5" />
+                <PointLight :position="{ x: 100, z: 0 }" />
+                <PointLight color="#ffffff" :intensity="0.5" :position="{ y: 0, z: 0 }" />
+                <Sphere ref="mesh" :radius="2.5" :width-segments="100" :height-segments="100">
+                    <StandardMaterial :props="{ displacementScale: 0.05 }">
+                        <Texture :src=planetPathBaseColor />
+                        <Texture :src=planetPathDisplacement name="displacementMap" />
+                        <Texture :src=planetPathNormal name="normalMap" />
+                        <Texture :src=planetPathRoughness name="roughnessMap" />
+                    </StandardMaterial>
+                </Sphere>
+            </Scene>
+        </Renderer>
     </div>
 </template>
 
@@ -39,17 +37,10 @@ export default {
 </script>
 
 <style >
-.container {
-    padding: 2px 16px;
-}
-
-.planet {
-    border-start-start-radius: 0.375rem;
-    border-start-end-radius: 0.375rem;
-}
-
-.centralize {
+.teste{
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
 </style>

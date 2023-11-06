@@ -5,13 +5,16 @@
   </div>
 
   <div class="planetsArea">
-    <h4>Planetas</h4>
+    <h4>Planetas + Lua + Plutão</h4>
     <div class="planets">
-      <div class="planet" v-for="planet in dataPlanets" :key="planet.planetNameEnglish">
+      <RouterLink class="planet-link" v-for="planet in dataPlanets" :key="planet.planetNameEnglish"
+        :to="planet.planetNameEnglish">
+        <div class="planet">
           <PlanetCard :planet-name="planet.planetName" :planet-name-english="planet.planetNameEnglish"
             :planet-path-base-color="planet.planetPathBaseColor"
             :planet-path-displacement="planet.planetPathDisplacement" />
-      </div>
+        </div>
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -59,4 +62,8 @@ h4 {
   cursor: pointer;
 }
 
+.planet-link {
+  text-decoration: none;
+  color: black
+}
 </style>

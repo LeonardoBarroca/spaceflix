@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CardView from "../views/CardView.vue";
-import PlanetCard from "../components/PlanetCard.vue";
+import PlanetArea from "../components/PlanetArea.vue";
 import data from "@/assets/data.json";
 
 const router = createRouter({
@@ -21,7 +21,7 @@ const router = createRouter({
 data.forEach(planet => {
   router.addRoute({
     path: `/${planet.planetNameEnglish}`,
-    component: PlanetCard,
+    component: PlanetArea,
     props: {
       planetName: planet.planetName,
       planetNameEnglish: planet.planetNameEnglish,
