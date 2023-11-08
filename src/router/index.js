@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CardView from "../views/CardView.vue";
 import PlanetArea from "../components/PlanetArea.vue";
+import GalaxyArea from "../components/GalaxyArea.vue";
 import planetsData from "@/assets/planetsData";
 import galaxiesData from "@/assets/galaxiesData";
 
@@ -21,15 +22,15 @@ const router = createRouter({
 
 planetsData.forEach(planet => {
   router.addRoute({
-    path: `/${planet.planetNameEnglish}`,
+    path: `/${planet.englishName}`,
     component: PlanetArea,
     props: {
-      planetName: planet.planetName,
-      planetNameEnglish: planet.planetNameEnglish,
-      planetPathBaseColor: planet.planetPathBaseColor,
-      planetPathDisplacement: planet.planetPathDisplacement,
-      planetPathRoughness: planet.planetPathRoughness,
-      planetPathNormal: planet.planetPathNormal,
+      name: planet.name,
+      englishName: planet.englishName,
+      pathBaseColor: planet.pathBaseColor,
+      pathDisplacement: planet.pathDisplacement,
+      pathRoughness: planet.pathRoughness,
+      pathNormal: planet.pathNormal,
       diameter: planet.diameter,
       gravity: planet.gravity,
       distanceFromSun: planet.distanceFromSun,
@@ -46,11 +47,11 @@ planetsData.forEach(planet => {
     }
   });
 });
-/*
+
 galaxiesData.forEach(galaxy => {
   router.addRoute({
     path: `/${galaxy.englishName}`,
-    component: Card,
+    component: GalaxyArea,
     props: {
       name: galaxy.name,
       englishName: galaxy.englishName,
@@ -65,5 +66,5 @@ galaxiesData.forEach(galaxy => {
     }
   });
 });
- */
+
 export default router;

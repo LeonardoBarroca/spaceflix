@@ -12,22 +12,13 @@
 export default {
     components: {},
     props: {
-        image: String,
-        name: String,
-        englishName: String,
-        type: String,
-        distanceFromEarth: String,
-        diameter: String,
-        numberOfStars: String,
-        discoveryYear: String,
-        discoveredBy: String,
-        interestingFact: String,
-        curiosity: String
+        imagePath: String,
+        name: String
     },
 }
 </script>
 
-<style >
+<style scoped>
 .card {
     width: 130px;
     height: 240px;

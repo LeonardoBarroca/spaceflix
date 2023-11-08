@@ -9,16 +9,16 @@
                 <PointLight color="#ffffff" :intensity="0.75" :position="{ y: 0, z: 0 }" />
                 <Sphere ref="mesh" :radius="2.5" :width-segments="100" :height-segments="100">
                     <StandardMaterial :props="{ displacementScale: 0.05 }">
-                        <Texture :src=planetPathBaseColor />
-                        <Texture :src=planetPathDisplacement name="displacementMap" />
-                        <Texture :src=planetPathNormal name="normalMap" />
-                        <Texture :src=planetPathRoughness name="roughnessMap" />
+                        <Texture :src=pathBaseColor />
+                        <Texture :src=pathDisplacement name="displacementMap" />
+                        <Texture :src=pathNormal name="normalMap" />
+                        <Texture :src=pathRoughness name="roughnessMap" />
                     </StandardMaterial>
                 </Sphere>
             </Scene>
         </Renderer>
         <div class="container">
-            <h5><b>{{ planetName }}</b></h5>
+            <h5><b>{{ name }}</b></h5>
         </div>
     </div>
 </template>
@@ -30,17 +30,17 @@ export default {
     name: "PlanetCard",
     components: { AmbientLight, Camera, Renderer, PointLight, Scene, Sphere, StandardMaterial, Texture },
     props: {
-        planetName: String,
-        planetNameEnglish: String,
-        planetPathBaseColor: String,
-        planetPathDisplacement: String,
-        planetPathRoughness: String,
-        planetPathNormal: String
+        name: String,
+        englishName: String,
+        pathBaseColor: String,
+        pathDisplacement: String,
+        pathRoughness: String,
+        pathNormal: String
     },
 }
 </script>
 
-<style >
+<style scoped>
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border:none;

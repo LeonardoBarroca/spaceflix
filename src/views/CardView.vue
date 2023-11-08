@@ -8,35 +8,33 @@
     <div class="planets-area">
       <h4>Sistema Solar</h4>
       <div class="planets">
-        <RouterLink class="planet-link" v-for="planet in planetsData" :key="planet.planetNameEnglish"
-          :to="planet.planetNameEnglish">
+        <RouterLink class="planet-link" v-for="planet in planetsData" :key="planet.englishName" :to="planet.englishName">
           <div class="planet">
-            <PlanetCard :planetName="planet.planetName" :planetNameEnglish="planet.planetNameEnglish"
-              :planetPathBaseColor="planet.planetPathBaseColor" :planetPathDisplacement="planet.planetPathDisplacement"
-              :planetPathRoughness="planet.planetPathRoughness" :planetPathNormal="planet.planetPathNormal" />
+            <PlanetCard :name="planet.name" :englishName="planet.englishName" :pathBaseColor="planet.pathBaseColor"
+              :pathDisplacement="planet.pathDisplacement" :pathRoughness="planet.pathRoughness"
+              :pathNormal="planet.pathNormal" />
           </div>
         </RouterLink>
       </div>
     </div>
 
-    <!--   <div class="galaxies-area">
-    <h4>Galáxias</h4>
-    <div class="galaxies">
-      <RouterLink class="galaxy-link" v-for="galaxy in galaxiesData" :key="galaxy.planetNameEnglish"
-        :to="galaxy.planetNameEnglish">
-        <div class="galaxy">
-          <PlanetCard :galaxy-name="galaxy.planetName" :galaxy-name-english="galaxy.planetNameEnglish"
-            :galaxy-path-base-color="galaxy.planetPathBaseColor"
-            :galaxy-path-displacement="galaxy.planetPathDisplacement" />
-        </div>
-      </RouterLink>
-    </div>
-  </div> -->
+<!--     <div class="planets-area">
+      <h4>Galáxias</h4>
+      <div class="planets">
+        <RouterLink class="planets-link" v-for="galaxy in localGalaxiesData" :key="galaxy.englishName" :to="galaxy.englishName">
+          <div class="planet">
+            <GalaxyCard :imagePath="galaxy.imagePath" :name="galaxy.englishName"
+            />
+          </div>
+        </RouterLink>
+      </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import PlanetCard from '../components/PlanetCard.vue'
+//import GalaxyCard from '../components/GalaxyCard.vue'
 import planetsData from '../assets/planetsData'
 import galaxiesData from '../assets/galaxiesData'
 
@@ -53,7 +51,7 @@ export default {
   computed: {
     planetsData() {
       return this.localPlanetsData.filter(p => {
-        return p.planetName.toLowerCase().includes(this.search.toLowerCase())
+        return p.name.toLowerCase().includes(this.search.toLowerCase())
       })
     }
   }

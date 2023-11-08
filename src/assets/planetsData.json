@@ -1,9 +1,9 @@
 [
     {
-        "planetName": "Mercúrio",
-        "planetNameEnglish": "Mercury",
-        "planetPathBaseColor": "mercurymap.jpg",
-        "planetPathDisplacement": "mercurybump.jpg",
+        "name": "Mercúrio",
+        "englishName": "Mercury",
+        "pathBaseColor": "mercurymap.jpg",
+        "pathDisplacement": "mercurybump.jpg",
         "diameter": "4.880 km",
         "gravity": "3.7 m/s²",
         "rotationSpeed": "1.407,6 horas",
@@ -20,10 +20,10 @@
         "curiosity": "Mercúrio é o planeta mais próximo do Sol e não possui atmosfera significativa para reter calor, resultando em temperaturas extremas."
     },
     {
-        "planetName": "Vênus",
-        "planetNameEnglish": "Venus",
-        "planetPathBaseColor": "venusmap.jpg",
-        "planetPathDisplacement": "venusbump.jpg",
+        "name": "Vênus",
+        "englishName": "Venus",
+        "pathBaseColor": "venusmap.jpg",
+        "pathDisplacement": "venusbump.jpg",
         "diameter": "12.104 km",
         "gravity": "8.87 m/s²",
         "rotationSpeed": "-5.832,5 horas (rotação retrógrada)",
@@ -40,11 +40,11 @@
         "curiosity": "Vênus é o planeta mais quente do Sistema Solar, devido ao seu espesso e tóxico manto de nuvens que retém o calor."
     },
     {
-        "planetName": "Terra",
-        "planetNameEnglish": "Earth",
-        "planetPathBaseColor": "earthmap4k.jpg",
-        "planetPathRoughness": "earthcloudmaptrans.jpg",
-        "planetPathDisplacement": "8081_earthbump4k.jpg",
+        "name": "Terra",
+        "englishName": "Earth",
+        "pathBaseColor": "earthmap4k.jpg",
+        "pathRoughness": "earthcloudmaptrans.jpg",
+        "pathDisplacement": "8081_earthbump4k.jpg",
         "diameter": "12.742 km",
         "gravity": "9.81 m/s²",
         "rotationSpeed": "23h 56m 4.1s",
@@ -61,10 +61,10 @@
         "curiosity": "A Terra é o único planeta conhecido a ter vida. É o lar de uma incrível diversidade de organismos, incluindo os seres humanos."
     },
     {
-        "planetName": "Lua",
-        "planetNameEnglish": "Moon",
-        "planetPathBaseColor": "moonmap2k.jpg",
-        "planetPathDisplacement": "moonbump2k.jpg",
+        "name": "Lua",
+        "englishName": "Moon",
+        "pathBaseColor": "moonmap2k.jpg",
+        "pathDisplacement": "moonbump2k.jpg",
         "diameter": "3.476 km",
         "gravity": "1.62 m/s²",
         "rotationSpeed": "Síncrona com a Terra",
@@ -81,11 +81,11 @@
         "curiosity": "A Lua é o único satélite natural da Terra e é o quinto maior satélite do Sistema Solar. Influencia as marés na Terra."
     },
     {
-        "planetName": "Marte",
-        "planetNameEnglish": "Mars",
-        "planetPathBaseColor": "marsmap1k.jpg",
-        "planetPathNormal": "mars_1k_normal.jpg",
-        "planetPathDisplacement": "marsbump1k.jpg",
+        "name": "Marte",
+        "englishName": "Mars",
+        "pathBaseColor": "marsmap1k.jpg",
+        "pathNormal": "mars_1k_normal.jpg",
+        "pathDisplacement": "marsbump1k.jpg",
         "diameter": "6.792 km",
         "gravity": "3.71 m/s²",
         "rotationSpeed": "24.6 horas",
@@ -102,9 +102,9 @@
         "curiosity": "Marte tem uma paisagem marciana única, incluindo o Monte Olimpo, o vulcão mais alto do Sistema Solar, e o Canyon Valles Marineris, o maior cânion conhecido."
     },
     {
-        "planetName": "Júpiter",
-        "planetNameEnglish": "Jupiter",
-        "planetPathBaseColor": "jupiter2_2k.jpg",
+        "name": "Júpiter",
+        "englishName": "Jupiter",
+        "pathBaseColor": "jupiter2_2k.jpg",
         "diameter": "139.820 km",
         "gravity": "24.79 m/s²",
         "rotationSpeed": "9.9 horas",
@@ -121,9 +121,9 @@
         "curiosity": "Júpiter é o maior planeta do Sistema Solar e possui um campo magnético poderoso que gera as belas auroras em seus polos."
     },
     {
-        "planetName": "Saturno",
-        "planetNameEnglish": "Saturn",
-        "planetPathBaseColor": "saturnmap.jpg",
+        "name": "Saturno",
+        "englishName": "Saturn",
+        "pathBaseColor": "saturnmap.jpg",
         "diameter": "116.460 km",
         "gravity": "10.44 m/s²",
         "rotationSpeed": "10.7 horas",
@@ -140,9 +140,9 @@
         "curiosity": "Saturno é famoso por seus impressionantes anéis, que são compostos principalmente de partículas de gelo e rocha em órbita ao redor do planeta."
     },
     {
-        "planetName": "Urano",
-        "planetNameEnglish": "Uranus",
-        "planetPathBaseColor": "uranusmap.jpg",
+        "name": "Urano",
+        "englishName": "Uranus",
+        "pathBaseColor": "uranusmap.jpg",
         "diameter": "50.724 km",
         "gravity": "8.69 m/s²",
         "rotationSpeed": "-17.2 horas (rotação retrógrada)",
@@ -159,9 +159,9 @@
         "curiosity": "Urano é o único planeta do Sistema Solar com um eixo de rotação quase paralelo ao plano de órbita, resultando em estações extremas e imprevisíveis."
     },
     {
-        "planetName": "Netuno",
-        "planetNameEnglish": "Neptune",
-        "planetPathBaseColor": "neptunemap.jpg",
+        "name": "Netuno",
+        "englishName": "Neptune",
+        "pathBaseColor": "neptunemap.jpg",
         "diameter": "49.244 km",
         "gravity": "11.15 m/s²",
         "rotationSpeed": "16.1 horas",
@@ -178,10 +178,10 @@
         "curiosity": "Netuno é um dos planetas gasosos do Sistema Solar e possui ventos extremamente velozes, chegando a até 2.100 km/h."
     },
     {
-        "planetName": "Plutão",
-        "planetNameEnglish": "Pluto",
-        "planetPathBaseColor": "plutomap2k.jpg",
-        "planetPathDisplacement": "plutobump2k.jpg",
+        "name": "Plutão",
+        "englishName": "Pluto",
+        "pathBaseColor": "plutomap2k.jpg",
+        "pathDisplacement": "plutobump2k.jpg",
         "diameter": "2.370 km",
         "gravity": "0.62 m/s²",
         "rotationSpeed": "153.3 horas",
