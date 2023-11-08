@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Via Láctea",
+        "englishName": "Milky Way",
+        "type": "Espiral",
+        "distanceFromEarth": "N/A (Nossa Galáxia)",
+        "diameter": "Aprox. 100.000 anos-luz",
+        "numberOfStars": "Aprox. 100 bilhões",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Casa do Sistema Solar e de inúmeros objetos celestes.",
+        "curiosity": "O nome 'Via Láctea' vem do grego 'Galaxias Kyklos', que significa 'círculo leitoso'."
+    },
+    {
+        "name": "Andrômeda",
+        "englishName": "Andromeda",
+        "type": "Espiral",
+        "distanceFromEarth": "Aprox. 2.537 milhões de anos-luz",
+        "diameter": "Aprox. 220.000 anos-luz",
+        "numberOfStars": "Aprox. 1 trilhão",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Galáxia espiral mais próxima da Via Láctea.",
+        "curiosity": "Andrômeda é o maior membro do Grupo Local de galáxias que inclui a Via Láctea."
+    },
+    {
+        "name": "Triângulo",
+        "englishName": "Triangulum",
+        "type": "Espiral",
+        "distanceFromEarth": "Aprox. 3 milhões de anos-luz",
+        "diameter": "Aprox. 60.000 anos-luz",
+        "numberOfStars": "Aprox. 40 bilhões",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Terceira maior galáxia no Grupo Local.",
+        "curiosity": "O Triângulo é a única galáxia do Grupo Local que é visível a olho nu a partir da Terra."
+    },
+    {
+        "name": "Grande Nuvem de Magalhães",
+        "englishName": "Large Magellanic Cloud",
+        "type": "Irregular",
+        "distanceFromEarth": "Aprox. 163.000 anos-luz",
+        "diameter": "Aprox. 14.000 anos-luz",
+        "numberOfStars": "Aprox. 30 bilhões",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Uma das galáxias satélites da Via Láctea.",
+        "curiosity": "A Grande Nuvem de Magalhães foi nomeada em homenagem ao explorador português Fernão de Magalhães."
+    },
+    {
+        "name": "Pequena Nuvem de Magalhães",
+        "englishName": "Small Magellanic Cloud",
+        "type": "Irregular",
+        "distanceFromEarth": "Aprox. 200.000 anos-luz",
+        "diameter": "Aprox. 7.000 anos-luz",
+        "numberOfStars": "Aprox. 7 bilhões",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Uma das galáxias satélites da Via Láctea.",
+        "curiosity": "A Pequena Nuvem de Magalhães é uma das galáxias mais próximas da Terra."
+    },
+    {
+        "name": "Galáxia do Triângulo (M33)",
+        "englishName": "Triangulum Galaxy (M33)",
+        "type": "Espiral",
+        "distanceFromEarth": "Aprox. 2.723 milhões de anos-luz",
+        "diameter": "Aprox. 60.000 anos-luz",
+        "numberOfStars": "Aprox. 40 bilhões",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Parte do Grupo Local de galáxias.",
+        "curiosity": "A Galáxia do Triângulo é a terceira maior galáxia espiral no Grupo Local, depois da Via Láctea e Andrômeda."
+    },
+    {
+        "name": "M87 (Messier 87)",
+        "englishName": "M87 (Messier 87)",
+        "type": "Elíptica",
+        "distanceFromEarth": "Aprox. 53,5 milhões de anos-luz",
+        "diameter": "Aprox. 120.000 anos-luz",
+        "numberOfStars": "Desconhecido",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Casa do primeiro buraco negro já fotografado (M87*).",
+        "curiosity": "M87 é o lar do buraco negro supermassivo que foi fotografado pela primeira vez em 2019 pelo Telescópio do Horizonte de Eventos."
+    },
+    {
+        "name": "NGC 1365",
+        "englishName": "NGC 1365",
+        "type": "Espiral Barred",
+        "distanceFromEarth": "Aprox. 56 milhões de anos-luz",
+        "diameter": "Aprox. 200.000 anos-luz",
+        "numberOfStars": "Desconhecido",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Contém uma barra central proeminente de estrelas.",
+        "curiosity": "A NGC 1365 é uma das galáxias barradas mais proeminentes no céu noturno."
+    },
+    {
+        "name": "Sombrero (M104)",
+        "englishName": "Sombrero (M104)",
+        "type": "Elíptica",
+        "distanceFromEarth": "Aprox. 29,3 milhões de anos-luz",
+        "diameter": "Aprox. 50.000 anos-luz",
+        "numberOfStars": "Desconhecido",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Conhecida pelo seu núcleo brilhante e grande bulbo central.",
+        "curiosidade": "A Galáxia do Sombrero é uma das galáxias mais fotografadas no céu noturno devido à sua aparência distintiva."
+    },
+    {
+        "name": "Galáxia do Cigarro (M82)",
+        "englishName": "Cigar Galaxy (M82)",
+        "type": "Irregular",
+        "distanceFromEarth": "Aprox. 12 milhões de anos-luz",
+        "diameter": "Aprox. 37.000 anos-luz",
+        "numberOfStars": "Aprox. 100 bilhões",
+        "discoveryYear": "Conhecida desde a antiguidade",
+        "discoveredBy": "Vários",
+        "interestingFact": "Atualmente passando por um período de intensa formação estelar.",
+        "curiosidade": "A Galáxia Cigarro está no meio de uma 'tempestade de nascimento estelar', com intensa atividade de formação de estrelas."
+    }
+]
