@@ -63,7 +63,7 @@
         "curiosidade": "A Galáxia Cigarro está no meio de uma 'tempestade de nascimento estelar', com intensa atividade de formação de estrelas."
     },
     {
-        "name": "Pequena Nuvem de Magalhães",
+        "name": "Grande Nuvem de Magalhães",
         "englishName": "Large Magellanic Cloud",
         "imagePath": "galaxies/large_magellanic_cloud.png",
         "constellation": "Doradus",
@@ -74,8 +74,8 @@
         "numberOfStars": "Estimado em 30 bilhões",
         "discoveryYear": "Conhecida desde tempos pré-históricos",
         "discoveredBy": "Observadores indígenas do hemisfério sul",
-        "interestingFact": "A Pequena Nuvem de Magalhães é uma das galáxias mais próximas da Via Láctea e interage gravitacionalmente com ela.",
-        "curiosity": "A galáxia foi nomeada em homenagem ao explorador português Fernão de Magalhães, que a descreveu em 1519 durante a sua expedição ao redor do mundo.",
+        "interestingFact": "A Grande Nuvem de Magalhães é uma das galáxias mais próximas da Via Láctea e é a quarta maior galáxia do Grupo Local.",
+        "curiosity": "Esta galáxia irregular é conhecida por ser o lar de várias nebulosas notáveis, incluindo a Nebulosa da Tarântula, uma das regiões de formação de estrelas mais ativas conhecidas.",
         "description": "A quase 200 mil anos-luz da Terra, a Grande Nuvem de Magalhães, uma galáxia satélite da Via Láctea, flutua no espaço, numa longa e lenta dança em torno da nossa galáxia. Vastas nuvens de gás dentro dele colapsam lentamente para formar novas estrelas. Por sua vez, estes iluminam as nuvens de gás numa profusão de cores, visível nesta imagem do Telescópio Espacial Hubble da NASA/ESA. A Grande Nuvem de Magalhães (LMC) está repleta de regiões de formação de estrelas. Desde a Nebulosa da Tarântula, o berçário estelar mais brilhante da nossa vizinhança cósmica, até à LHA 120-N 11, parte da qual aparece nesta imagem do Hubble, a pequena e irregular galáxia está repleta de nebulosas brilhantes, o sinal mais notável de que novas estrelas estão a surgir. nascendo."
     },
     {
