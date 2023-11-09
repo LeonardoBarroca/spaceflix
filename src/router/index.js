@@ -53,6 +53,7 @@ galaxiesData.forEach(galaxy => {
     path: `/${galaxy.englishName}`,
     component: GalaxyArea,
     props: {
+      imagePath: galaxy.imagePath,
       name: galaxy.name,
       englishName: galaxy.englishName,
       type: galaxy.type,

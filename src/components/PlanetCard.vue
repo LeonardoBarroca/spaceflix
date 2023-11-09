@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <Renderer class="planet" ref="renderer" height="600px"
+        <Renderer ref="renderer" height="600px"
             :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 1 }">
             <Camera :position="{ z: 6.5 }" />
             <Scene background="#000000">
@@ -42,31 +42,17 @@ export default {
 
 <style scoped>
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border:none;
+
     width: 120px;
     height: 285px;
     background-color: black;
     color: white;
-
 }
 
 .card:hover {
     transform: scale(1.01);
 }
-
 .container {
     padding: 4px 8px;
-
-}
-
-.planet {
-    border-start-start-radius: 0.3rem;
-    border-start-end-radius: 0.3rem;
-}
-
-.centralize {
-    display: flex;
-    align-items: center;
 }
 </style>

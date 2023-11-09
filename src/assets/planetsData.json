@@ -193,7 +193,8 @@
         "surfaceTemperature": "-223 °C",
         "dayLength": "153.3 horas",
         "yearLength": "248 anos terrestres",
-        "discoveryDate": "Descoberto em 1930 por Clyde Tombaugh",
+        "discoveryDate": "1930",
+        "discoveryBy": "Clyde Tombaugh",
         "curiosity": "Plutão já foi considerado o nono planeta do Sistema Solar, mas em 2006 foi reclassificado como um 'planeta anão'."
     }
 ]

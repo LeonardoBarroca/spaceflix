@@ -1,9 +1,9 @@
 <template>
     <div class="galaxy-area">
-        IMAGEM
+        <img :src="imagePath" :alt="name">
     </div>
     <div class="galaxy-data-area">
-        <p><strong>Nome</strong>: {{ name }} ({{ englishName }}) </p>
+        <p><strong>Nome</strong>: {{ name }} - {{ englishName }} </p>
         <p><strong>Tipo</strong>: {{ type }} </p>
         <p><strong>Distância da Terra</strong>: {{ distanceFromEarth }}</p>
         <p><strong>Diâmetro</strong>: {{ diameter }}</p>
@@ -53,4 +53,10 @@ export default {
     display: flex;
     justify-content: center;
 }
+
+img {
+    height: 300px;
+    object-fit: cover;
+}
+
 </style>
