@@ -1,7 +1,6 @@
 <template>
     <div class="card">
-        <Renderer ref="renderer" height="600px"
-            :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 1 }">
+        <Renderer ref="renderer" height="600px" :orbit-ctrl="{ autoRotate: true, enableDamping: true, dampingFactor: 1 }">
             <Camera :position="{ z: 6.5 }" />
             <Scene background="#000000">
                 <AmbientLight :intensity="0.5" />
@@ -42,7 +41,6 @@ export default {
 
 <style scoped>
 .card {
-
     width: 120px;
     height: 285px;
     background-color: black;
@@ -52,6 +50,7 @@ export default {
 .card:hover {
     transform: scale(1.01);
 }
+
 .container {
     padding: 4px 8px;
 }

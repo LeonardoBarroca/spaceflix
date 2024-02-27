@@ -10,7 +10,6 @@
 <script>
 
 export default {
-    components: {},
     props: {
         imagePath: String,
         name: String

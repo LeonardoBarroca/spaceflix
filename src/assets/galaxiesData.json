@@ -63,22 +63,6 @@
         "curiosidade": "A Galáxia Cigarro está no meio de uma 'tempestade de nascimento estelar', com intensa atividade de formação de estrelas."
     },
     {
-        "name": "Grande Nuvem de Magalhães",
-        "englishName": "Large Magellanic Cloud",
-        "imagePath": "galaxies/large_magellanic_cloud.png",
-        "constellation": "Doradus",
-        "type": "Irregular",
-        "apparentMagnitude": "0.9",
-        "distanceFromEarth": "Aprox. 200.000 anos-luz",
-        "diameter": "Aprox. 14.000 anos-luz",
-        "numberOfStars": "Estimado em 30 bilhões",
-        "discoveryYear": "Conhecida desde tempos pré-históricos",
-        "discoveredBy": "Observadores indígenas do hemisfério sul",
-        "interestingFact": "A Grande Nuvem de Magalhães é uma das galáxias mais próximas da Via Láctea e é a quarta maior galáxia do Grupo Local.",
-        "curiosity": "Esta galáxia irregular é conhecida por ser o lar de várias nebulosas notáveis, incluindo a Nebulosa da Tarântula, uma das regiões de formação de estrelas mais ativas conhecidas.",
-        "description": "A quase 200 mil anos-luz da Terra, a Grande Nuvem de Magalhães, uma galáxia satélite da Via Láctea, flutua no espaço, numa longa e lenta dança em torno da nossa galáxia. Vastas nuvens de gás dentro dele colapsam lentamente para formar novas estrelas. Por sua vez, estes iluminam as nuvens de gás numa profusão de cores, visível nesta imagem do Telescópio Espacial Hubble da NASA/ESA. A Grande Nuvem de Magalhães (LMC) está repleta de regiões de formação de estrelas. Desde a Nebulosa da Tarântula, o berçário estelar mais brilhante da nossa vizinhança cósmica, até à LHA 120-N 11, parte da qual aparece nesta imagem do Hubble, a pequena e irregular galáxia está repleta de nebulosas brilhantes, o sinal mais notável de que novas estrelas estão a surgir. nascendo."
-    },
-    {
         "name": "Sombrero",
         "englishName": "Sombrero (M104)",
         "imagePath": "galaxies/sombrero.png",
@@ -139,5 +123,21 @@
         "interestingFact": "Casa do primeiro buraco negro já fotografado (M87*).",
         "curiosity": "M87 é o lar do buraco negro supermassivo que foi fotografado pela primeira vez em 2019 pelo Telescópio do Horizonte de Eventos.",
         "description": "A galáxia elíptica M87 é o lar de vários trilhões de estrelas, um buraco negro supermassivo e uma família de cerca de 15.000 aglomerados estelares globulares. Para efeito de comparação, a nossa galáxia, a Via Láctea, contém apenas algumas centenas de bilhões de estrelas e cerca de 150 aglomerados globulares. O monstruoso M87 é o membro dominante do aglomerado de galáxias vizinho de Virgem, que contém cerca de 2.000 galáxias. Descoberta em 1781 por Charles Messier, esta galáxia está localizada a 54 milhões de anos-luz de distância da Terra, na constelação de Virgem. Tem uma magnitude aparente de 9,6 e pode ser observado com um pequeno telescópio mais facilmente em maio."
+    },
+    {
+        "name": "Grande Nuvem de Magalhães",
+        "englishName": "Large Magellanic Cloud",
+        "imagePath": "galaxies/large_magellanic_cloud.png",
+        "constellation": "Doradus",
+        "type": "Irregular",
+        "apparentMagnitude": "0.9",
+        "distanceFromEarth": "Aprox. 200.000 anos-luz",
+        "diameter": "Aprox. 14.000 anos-luz",
+        "numberOfStars": "Estimado em 30 bilhões",
+        "discoveryYear": "Conhecida desde tempos pré-históricos",
+        "discoveredBy": "Observadores indígenas do hemisfério sul",
+        "interestingFact": "A Grande Nuvem de Magalhães é uma das galáxias mais próximas da Via Láctea e é a quarta maior galáxia do Grupo Local.",
+        "curiosity": "Esta galáxia irregular é conhecida por ser o lar de várias nebulosas notáveis, incluindo a Nebulosa da Tarântula, uma das regiões de formação de estrelas mais ativas conhecidas.",
+        "description": "A quase 200 mil anos-luz da Terra, a Grande Nuvem de Magalhães, uma galáxia satélite da Via Láctea, flutua no espaço, numa longa e lenta dança em torno da nossa galáxia. Vastas nuvens de gás dentro dele colapsam lentamente para formar novas estrelas. Por sua vez, estes iluminam as nuvens de gás numa profusão de cores, visível nesta imagem do Telescópio Espacial Hubble da NASA/ESA. A Grande Nuvem de Magalhães (LMC) está repleta de regiões de formação de estrelas. Desde a Nebulosa da Tarântula, o berçário estelar mais brilhante da nossa vizinhança cósmica, até à LHA 120-N 11, parte da qual aparece nesta imagem do Hubble, a pequena e irregular galáxia está repleta de nebulosas brilhantes, o sinal mais notável de que novas estrelas estão a surgir. nascendo."
     }
 ]
