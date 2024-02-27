@@ -1,16 +1,38 @@
 <template>
-  <div class="search-wrapper">
-    <input type="text" v-model="search" placeholder="Search title.." />
-    <label>Search title:</label>
-  </div>
+  <div class="cards-area">
 
-  <div class="planetsArea">
-    <h4>Planetas</h4>
-    <div class="planets">
-      <div class="planet" v-for="planet in dataPlanets" :key="planet.planetNameEnglish">
-          <PlanetCard :planet-name="planet.planetName" :planet-name-english="planet.planetNameEnglish"
-            :planet-path-base-color="planet.planetPathBaseColor"
-            :planet-path-displacement="planet.planetPathDisplacement" />
+    <div class="search-wrapper">
+      <input type="text" v-model="search" placeholder="pesquisar..." />
+    </div>
+
+    <div class="cards-row">
+      <h4>Sistema Solar</h4>
+      <div class="cards">
+        <RouterLink class="card-link" v-for="planet in planetsData" :key="planet.englishName" :to="planet.englishName">
+          <div class="card-area">
+            <PlanetCard :name="planet.name" :englishName="planet.englishName" :pathBaseColor="planet.pathBaseColor"
+              :pathDisplacement="planet.pathDisplacement" :pathRoughness="planet.pathRoughness"
+              :pathNormal="planet.pathNormal" />
+          </div>
+        </RouterLink>
+      </div>
+    </div>
+
+    <div class="cards-row">
+      <h4>Galáxias</h4>
+      <div class="cards">
+        <RouterLink class="card-link" v-for="galaxy in galaxiesData" :key="galaxy.englishName" :to="galaxy.englishName">
+          <GalaxyCard :imagePath="galaxy.imagePath" :name="galaxy.name" />
+        </RouterLink>
+      </div>
+    </div>
+
+    <div class="cards-row">
+      <h4>Vídeos</h4>
+      <div class="cards">
+        <div class="videos-row" v-for="(videoId, index) in videoIds" :key="index">
+          <VideoCard :videoId="videoId" :playerId="'player-' + index" />
+        </div>
       </div>
     </div>
   </div>
@@ -18,21 +40,30 @@
 
 <script>
 import PlanetCard from '../components/PlanetCard.vue'
-import dataPlanets from '../assets/data.json'
+import planetsData from '../assets/planetsData'
+import GalaxyCard from '../components/GalaxyCard.vue'
+import galaxiesData from '../assets/galaxiesData'
+import VideoCard from '../components/VideoCard.vue'
 
 export default {
-  components: { PlanetCard },
-
+  components: { PlanetCard, GalaxyCard, VideoCard },
   data() {
     return {
-      data: dataPlanets,
-      search: ""
+      localPlanetsData: planetsData,
+      localGalaxiesData: galaxiesData,
+      search: "",
+      videoIds: ['SpcPB_lzCxc', '_T8cn2J13-4', '921VbEMAwwY', 'uD4izuDMUQA', 'egDIqKLt2L4', 'cTQ3Ko9ZKg8', 'wkQuOrsgVGY', 'MlOjSQeO1Dg']
     }
   },
   computed: {
-    dataPlanets() {
-      return this.data.filter(p => {
-        return p.planetName.toLowerCase().includes(this.search.toLowerCase())
+    planetsData() {
+      return this.localPlanetsData.filter(planet => {
+        return planet.name.toLowerCase().includes(this.search.toLowerCase())
+      })
+    },
+    galaxiesData() {
+      return this.localGalaxiesData.filter(galaxy => {
+        return galaxy.name.toLowerCase().includes(this.search.toLowerCase())
       })
     }
   }
@@ -41,7 +72,12 @@ export default {
 
 
 <style scoped>
-.planetsArea {
+.cards-area {
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+.cards-row {
   margin: 5px;
   padding: 5px;
 }
@@ -50,13 +86,38 @@ h4 {
   margin-left: 15px;
 }
 
-.planets {
+.cards {
   display: flex;
 }
 
-.planet {
-  margin-left: 15px;
+.card-area {
   cursor: pointer;
 }
 
+.card-link {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-right: 8px;
+}
+
+.videos-row {
+  margin-left: 15px;
+}
+
+input {
+  margin: 4px;
+  width: 150px;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  border: 1px solid #ccc
+}
 </style>
